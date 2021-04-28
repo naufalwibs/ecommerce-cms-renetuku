@@ -1,0 +1,223 @@
+body {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* #landing-page .img {
+    width: 100%;
+    height: auto;
+} */
+
+.idx-img {
+    z-index: -10;
+    position: absolute;
+    max-height: 100%;
+}
+
+.backlay {
+    background-color: rgba(32, 36, 38, 0.447);
+    border-radius: 10px;
+    padding-top: 4%;
+    /* max-width: 50%; */
+     max-width: 90%;
+}
+
+.backlay-front {
+    background-color: rgba(32, 36, 38, 0.447);
+    border-radius: 10px;
+    padding: 2%;
+    color: white;
+}
+
+
+.backlay-dashboard {
+    background-color: rgba(32, 36, 38, 0.447);
+    border-radius: 10px;
+    padding-top: 8%;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+
+.form-signin .checkbox {
+    font-weight: 400;
+}
+
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.top {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    }
+.middle {
+    border-radius: 0;
+    margin-bottom: -2px;
+    }
+    
+.bottom {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    }
+
+.row-width {
+    width: 75rem;
+    /* height: 60rem; */
+}
+
+/* #landing-page { */
+    /* background-image: url('./asset/renetuku-bg.png'); */
+/* } */
+
+/* #landing-page p, h1, h3, h5 {
+    color: white;
+} */
+
+#landing-page .container-fluid {
+    padding: 8% 15% 15%;
+}
+
+#login-page .container-fluid {
+    padding: 5% 15% 3%;
+}
+
+/* #login-page .img {
+    width: 100%;
+    height: auto;
+} */
+
+.mid-image {
+    text-align: center;
+    color: white;
+}
+
+#add-product-page .container-fluid {
+    padding: 5% 15% 0%;
+}
+
+/* #add-product-page .img {
+    width: 100%;
+    height: auto;
+} */
+
+#edit-product-page .container-fluid {
+    padding: 5% 15% 0%;
+}
+
+/* #edit-product-page .img {
+    width: 100%;
+    height: auto;
+} */
+
+#product-page .container-fluid {
+    padding: 8% 10% 16%;
+}
+
+#product-page .img {
+    width: 100%;
+    height: auto;
+}
+
+#add-banner-page .container-fluid {
+    padding: 5% 15% 0%;
+}
+
+/* #add-banner-page .img {
+    width: 100%;
+    height: auto;
+} */
+
+#edit-banner-page .container-fluid {
+    padding: 8% 15% 8%;
+}
+
+/* #edit-banner-page .img {
+    width: 100%;
+    height: auto;
+} */
+
+#banner-page .container-fluid {
+    padding: 8% 15% 16%;
+}
+
+/* #banner-page .img {
+    width: 100%;
+    height: auto;
+} */
+
+.margin-fix-dbp {
+    margin: 0;
+}
+
+.white-txt {
+    color: white;
+}
+
+.margin-db-title {
+    margin-bottom: 3%;
+}
+
+.scrollable {
+    /* overflow-y: auto;
+    width: 1250px;
+    max-height: 480px; */
+    height: 100vh;
+    overflow-x: hidden;  
+    overflow-y:scroll ;
+}
+
+.img-banner {
+    max-height: 300px;
+}
+
+.btn-card {
+    opacity: 0.3;
+}
+
+.btn-card:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-height-max {
+    height: 15rem;
+    max-height: 15rem;
+}
+
+.img-product {
+    background: url('./admin-page-bg.png') no-repeat fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.img-landing {
+    background: url('./renetuku-bg-adm.png') no-repeat fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.bg-preview {
+    background-color: white;
+    border-radius: 10px;
+    z-index: 0;
+    max-width: 100%;
+}

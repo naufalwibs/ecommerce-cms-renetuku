@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a5b26f850d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Renetuku</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav id="nav-before-login" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./asset/renetuku-nav-logo.png" alt="rt-logo" width="150" class="d-inline-block align-top brand-radius">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Shop</a>
+            <a class="nav-link" href="#">About Us</a>
+            </div>
+        </div> -->
+        </div>
+    </nav>
+
+    <nav id="nav-after-login" class="navbar navbar-expand-lg navbar-light bg-light" v-if="navbar == true">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./asset/renetuku-nav-logo.png" alt="" width="150" class="d-inline-block align-top brand-radius">
+            </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"></i> Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-plus-square"></i> Add Product</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-map"></i> Banner</a>                       
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-plus-square"></i> Add Banner</a>                       
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>                        
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+    <!-- LANDING PAGE -->
+    <section id="landing-page">
+        <img class="idx-img" src="./asset/renetuku-bg-adm.png" alt="bg-img">
+        <div class="container-fluid text-landing">
+                <div class="col-lg-6">
+                    <h1> Renetuku </h1>
+                    <h3> Best Choice, Best Price </h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+                    </p>
+                    <div class="col-lg d-flex justify-content-left">
+                        <button type="button" class="btn btn-dark btn-lg"><i class="fas fa-sign-in-alt"></i> Login</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    
+                </div>
+        </div>
+    </section>
+
+    <section id="login-page">
+        <img class="idx-img" src="./asset/renetuku-bg-adm.png" alt="bg-img">
+        <div class="container-fluid text-landing d-flex justify-content-center">
+            <div class="col-lg backlay">
+                <main class="form-signin mid-image">
+                    <img src="./asset/renetuku-logo.png" alt="renetuku" width="200px">
+                    <form>
+                        <h1 class="h3 mb-3 fw-normal text-center">Please sign in</h1>
+                        <label for="inputEmail" class="d-none">Email address</label>
+                        <input v-model="email" type="email" id="email-login" class="form-control" placeholder="Email address" autofocus>
+                        <label for="inputPassword" class="d-none">Password</label>
+                        <input v-model="password" type="password" id="password-login" class="form-control" placeholder="Password">
+                        <div class="checkbox mb-3">
+                            <label>
+                            <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-outline-light" type="submit">Sign in</button>
+                        <p class="mt-5 mb-3 text-center">&copy; 2021</p>
+                    </form>
+                </main>
+        </div>
+    </div>
+    </section>
+
+    <section id="add-product-page">
+        <img class="idx-img" src="./asset/admin-page-bg.png" alt="bg-img">
+        <div class="container-fluid text-landing d-flex justify-content-center">
+            <div class="col-lg backlay white-txt">
+                <main class="form-signin">
+                    <form>
+                        <h1 class="h3 mb-3 fw-normal text-center">Add Product</h1>
+                        <label for="productName">Product Name</label>
+                        <input type="text" id="product-name" class="form-control" placeholder="Product Name" autofocus>
+                        <label for="category">Category</label>
+                        <input type="text" id="category-product" class="form-control" placeholder="Category">
+                        <label for="stock">Stock</label>
+                        <input type="number" id="stock" class="form-control" placeholder="Stock">
+                        <label for="price">Price</label>
+                        <input type="number" id="price" class="form-control" placeholder="Price">
+                        <label for="imageUrl">Image Url</label>
+                        <input type="url" id="image-url" class="form-control" placeholder="Image Url">
+                        <div class="mb-3"></div>
+                        <button class="w-100 btn btn-lg btn-outline-light" type="submit">Add Product</button>
+                        <p class="mt-5 mb-3 text-center">&copy; 2021</p>
+                    </form>
+                </main>
+        </div>
+    </div>
+    </section>
+
+    <section id="add-banner-page">
+        <img class="idx-img" src="./asset/admin-page-bg.png" alt="bg-img">
+        <div class="container-fluid text-landing d-flex justify-content-center">
+            <div class="col-lg backlay white-txt">
+                <main class="form-signin">
+                    <form>
+                        <h1 class="h3 mb-3 fw-normal text-center">Add Banner</h1>
+                        <label for="bannerUrl">Banner Url</label>
+                        <input type="url" id="bannerUrl" class="form-control" placeholder="Banner Url" autofocus>
+                        <label for="category">Category</label>
+                        <input type="text" id="category-banner" class="form-control" placeholder="Category">
+                        <p for="status">Status</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="active">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Active
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" value="inactive">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Inactive
+                            </label>
+                          </div>
+                            <!-- <input class="form-check-input" type="radio" name="banner-active">
+                            <label class="form-check-label" for="banner-active">
+                                Active
+                            </label>
+                            <input class="form-check-input" type="radio" name="banner-inactive">
+                            <label class="form-check-label" for="banner-inactive">
+                                Inactive
+                            </label> -->
+                        <div class="mb-3"></div>
+                        <button class="w-100 btn btn-lg btn-outline-light" type="submit">Add Banner</button>
+                        <p class="mt-5 mb-3 text-center">&copy; 2021</p>
+                    </form>
+                </main>
+        </div>
+    </div>
+    </section>
+
+    <section id="product-page">
+        <img class="idx-img" src="./asset/admin-page-bg.png" alt="bg-img">
+        <div class="container-fluid text-landing backlay-dashboard">
+            <h2 class="white-txt text-center">Dashboard Products</h2>
+            
+            <div class="col-lg scrollable">
+
+                <div class="row row-width">
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Warlord Vest</h5>
+                              <p class="card-text"><i class="fab fa-vuejs"></i> Category Fashion</p>
+                              <p class="card-text"><i class="fas fa-cubes"></i> Stock 1000</p>
+                              <p class="card-text"><i class="fas fa-tag"></i> Price Rp 1.000.000</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <section id="banner-page">
+        <img class="idx-img" src="./asset/admin-page-bg.png" alt="bg-img">
+        <div class="container-fluid text-landing backlay-dashboard">
+            <h2 class="white-txt text-center">Dashboard Banners</h2>
+
+                    <div class="col-lg">
+                        <div class="card" style="width: 100%;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top img-banner" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Super Sale</h5>
+                              <p class="card-text"><i class="fas fa-info-circle"></i> Status Active</p>
+                              <p class="card-text"><i class="fab fa-vuejs"></i>Category Fashion</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="card" style="width: 100%;">
+                            <img src="./asset/renetuku-logo.png" class="card-img-top img-banner" alt="content">
+                            <div class="card-body">
+                              <h5 class="card-title">Super Sale</h5>
+                              <p class="card-text"><i class="fas fa-info-circle"></i> Status Active</p>
+                              <p class="card-text"><i class="fab fa-vuejs"></i>Category Fashion</p>
+                              <div class="d-flex justify-content-around">
+                                <i class="fas fa-edit"></i>
+                                <i class="fas fa-trash-alt"></i>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+    </div>
+    </section>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+</body>
+</html>

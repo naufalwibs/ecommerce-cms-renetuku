@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "naufalwibisono",
+    "password": "qwerty",
+    "database": "db_ec_cms_development",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "naufalwibisono",
+    "password": "qwerty",
+    "database": "db_ec_cms_test",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable":"DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      }
+    }
+  }
+}

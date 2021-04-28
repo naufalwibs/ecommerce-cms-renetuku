@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "renetuku-ecommerce-cms",
+  "private_key_id": "c71369943d6eb8adedc97c8a00a0f65e0af05eae",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDanE9DrUfm3by4\n7q5T7+VI9Vie4uEX/ZV/01p/3UQN/ZanmBBPq7tixocRrCiPpEUyzAggHq9jysPu\nGDTmZpvcDYi2q3hF4jI0qhY1Zv8j9XIeQi7YYO9xAXtL+7bnkRm1tVFW736gpxuo\n+j63vHTeaEHtcIJjTMGeSOvRR5kLI1vGuM+BYzzeMYnkrchIZZQ+EH/UtvLRM68e\nGGBn+IMOAM6ePI1f9cZt2vf+g3c23p4OiSvgB8H6iOZEPIdaoQvU412bXSjToT0i\nbBr43NbSGK+87TRDAFJPPpO8iqO4ZLatb58wC+T3nO7px0xFNU4BNBHUdxCvD4L3\nvjVLppgVAgMBAAECggEAAlHpV28F1dHhmFbUG8judn1AEQOYXvBOf1pHWhcHi1x3\nFlU7SxUn+m7f7RSWI5wbLeRTa7/Xnaf/t02jdhR9r/Km0kV0k81IOh3Z+Xwb1g5b\nRS3voFU7BUh+PfqwYLm9+5suf00wW1UaqorpUnraBKg3luT8RUCBx4O/mOt5GNCk\nuJQS2J8fpqPmDUtyw9huwM1atP/4C+xbW993b0saj6g2xUjx2FIIKJhf5TNDnVzr\nSYkCWrOEEEylvf4GsZj3s/NVmehR174HMU2OTi/XqjcQ8JZGQrMWLXxxBlMJz3PF\nkYtvrIMzfOU07vBNOdSAR3DRW87p8lhKrhkk3Fc50QKBgQD3BiE4fQRaPcRXcT8w\nTV07ax//bN1OordOqL/3urpZa2pmgL4xnAdCM9RwkLQSNKGZOKeNT7u0WBzbHtPq\nauI94feTTIpti+dioon/xEm4vpSFli1mmvcJaOHYbYhTU6L4MJtyg5Hf2+848Tm1\neVLonqsyUWfJMgd8J8yBbpYNbQKBgQDijd9ks8Wp2FtGQY6YPZUZ+tYuMX5XG7/Q\n0oiyv9EUjvpd/k+/mgQOlAJMsUtSX7fnCavrmVzjMGxldV4N5EaD/q+XDkEQSLGY\nfcRvlyp0AHmeClQDCaJEdMP5apeFZpEmWph3C3zHyYZjpsCxENDfPbDiOeU5Z/aI\nmeas4ClUSQKBgQDbR1W2D0QN10azWJP/DK32UOHWm4zYgRi3epTuE5PYTMHmu+IZ\np6fJ3Lh4M/ulLZNFsEUL6/tz28PBv1vee4LZ6/0ZhJhdJhQAOsjFgjjvBj5RVz52\nFpm0gKX6uUCKt3OzXXKf9KtJTLLOmVPhBBHU7QSLZjf7Ia4DSFEBlGkfAQKBgAF2\nVvXIb0MsYVJvw+LZquezBcTgjuczB6bqZPV6ZXgTgCwxIwSiktohPG6QSmMquP4l\nwtVPdRkGS/zPqB7A1W+uqiV4cxUO0w6f6S+rMxvykNZjTK2EV2bHtiga9wVmZxNv\nTEKgcVq8w0BLaDz8VczLEiQzqXYYZK/3BlUhUUL5AoGBAJBXJI/iz8gCJzosnCRM\nMe1MgETxErDS305ljvpk54MJiGHX8xJWm6PbGjyXWCxaCH4J3gTIxMe+7QEECRSa\nHIEogHyY7lgyBke1XMbeH2hCZd7aIYEfz6KtJka5KxAI7DEXKUtrq8HPcKF3Zksm\nMPIep82HyagBvIRmGccws++E\n-----END PRIVATE KEY-----\n",
+  "client_email": "renetuku-storage@renetuku-ecommerce-cms.iam.gserviceaccount.com",
+  "client_id": "102028652605389445341",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/renetuku-storage%40renetuku-ecommerce-cms.iam.gserviceaccount.com"
+}
